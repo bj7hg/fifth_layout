@@ -1,0 +1,85 @@
+@import "mixins.scss";
+@import "variables.scss";
+.sixth_block{
+    width: 100%;
+    min-height: 170px;
+    background-color: black;
+    .sixth_block_content{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        .sixth_left{
+            .sixth_text{
+                padding-top: 59px;
+                margin-left: -1px;
+                position: relative;
+                @include black_title;
+                .black_title{
+                    color: white;
+                    .you_see{
+                        margin-left: 1px;
+                    }
+                    .sixth_second_text{
+                        font-family: 'Sans Light';
+                    }
+                }
+            }
+        }
+        .sixth_right{
+            display: flex;
+            flex-direction: row;
+            @include button_features;
+            .button_features{
+                margin-left: 147px;
+                margin-top: 60px;
+                .features_text{
+                    margin-top: 14.8px;
+                    margin-left: 30.5px;
+                }
+            }
+            @include button_download;
+            .button_download{
+                margin-left: 20px;
+                margin-top: 60px;
+                .features_text{
+                    margin-top: 14.8px;
+                    margin-left: 30.5px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1199px){
+    .sixth_block{
+        .sixth_block_content{
+            flex-direction: column;
+            .sixth_left{
+                .sixth_text{
+                    text-align: center;
+                    box-sizing: border-box;
+                    padding: 20px 10px;
+                }
+            }
+            .sixth_right{
+                justify-content: center;
+                .button_features{
+                    margin: 10px;
+                }
+                .button_download{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .sixth_block{
+        .sixth_block_content{
+            .sixth_right{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@import "mixins.scss";
+@import "variables.scss";
+.fourth_block{
+    min-height: 544px;
+    background-color: #f2f2f2;
+    .fourth_block_content{
+        max-width: 1170px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        .fourth_block_left{
+            @include blue_title;
+            .blue_title{
+                margin-top: 129px;
+            }
+            @include black_title;
+            .black_title{
+                margin-top: 7.5px;
+                .om{
+                    margin-left: 2px;
+                }
+            }
+            .blue_line{
+                margin-top: 24px;
+                @include blue_line;
+                width: 42px;
+                height: 2px;
+            }
+            .fourth_block_subtext{
+                margin-top: 23.5px;
+                @include subtext;
+                position: relative;
+                .mauris{
+                    margin-left: 4px;
+                }
+            }
+        }
+        .fourth_block_right{
+            padding-right: 0;
+            .fourth_block_img{
+                margin-left: -27px;
+                margin-top: 34.5px;
+            }
+        }
+    }
+}
+@media (max-width:1250px){
+    .fourth_block{
+        .fourth_block_content{
+            .row{
+                --bs-gutter-x: 0;
+                padding: 0 15px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+@media (max-width:1199px){
+    .fourth_block{
+        .fourth_block_content{
+            .fourth_block_left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .blue_title{
+                    margin-top: 40px;
+                }
+                .fourth_block_subtext{
+                    max-width: 800px;
+                    text-align: center;
+                }
+            }
+            .fourth_block_right{
+                display: flex;
+                justify-content: center; 
+                overflow: hidden;
+                .fourth_block_img{
+                    margin-top: 30px;
+                    img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    margin-left: 20px;
+                    overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:650px){
+    .fourth_block{
+        .fourth_block_content{
+            .fourth_block_left{
+                .black_title{
+                    font-size: 24px;
+                    margin: 0 auto;
+                }
+                .fourth_block_subtext{
+                    max-width: 800px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

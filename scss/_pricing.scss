@@ -1,0 +1,388 @@
+@import "mixins.scss";
+@import "variables.scss";
+.seventh_block{
+    max-width: 1170px;
+    margin: 0 auto;
+    min-height: 780px;
+    @include blue_title;
+    .blue_title{
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 56px 0 0 12px;
+    }
+    @include black_title;
+    .black_title{
+        padding-left: 142px ;
+        margin: 7px auto 0;
+    }
+    .blue_line{
+        margin: 25px auto 0;
+        @include blue_line;
+        width: 42px;
+        height: 2px;
+    }
+    .pricing{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .first_price{
+            margin-left: -1px;
+            .plan{
+                width: 270px;
+                height: 69px;
+                border: 1px solid #e0e0e0;
+                .plan_text{
+                    @include plan_text;
+                    margin-top: 21px;
+                    margin-left: -1px;
+                }
+            }
+            .pricing_block{
+                height: 150px;
+                width: 270px;
+                @include borders;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .price_number{
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+
+                    .dolar{
+                        @include dolar;
+                        margin-top: 37px;
+                        margin-left: -5px;
+                        height: 40px;
+                    }
+                    .real_price{
+                        @include real_price;
+                        margin-top: 24px;
+                        height: 69px;
+                    }
+                }
+                .per_month{
+                    @include subtext;
+                }
+            }
+            .price_subtext{
+                height: 269px;
+                width: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include borders;
+                .subtext_text{
+                    margin-top: 46px;
+                    text-align: center;
+                    max-width: 196px;
+                    @include subtext;
+                    .lacinia{
+                        color: $blue;
+                    }
+                }
+                .button_order{
+                    @include button_order;
+                    margin-top: 39px;
+                }
+            }
+        }
+        .second_price{
+            margin-left: -1px;
+            padding-left: 7px;
+            .plan{
+                width: 270px;
+                height: 69px;
+                border: 1px solid #e0e0e0;
+                .plan_text{
+                    @include plan_text;
+                    margin-top: 21px;
+                }
+            }
+            .pricing_block{
+                height: 150px;
+                width: 270px;
+                @include borders;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .price_number{
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+
+                    .dolar{
+                        @include dolar;
+                        margin-top: 37px;
+                        margin-left: -3px;
+                        height: 40px;
+                    }
+                    .real_price{
+                        @include real_price;
+                        margin-top: 24px;
+                        height: 69px;
+                        margin-left: 1px;
+                    }
+                }
+                .per_month{
+                    @include subtext;
+                    margin-left: 1px;
+                }
+            }
+            .price_subtext{
+                height: 269px;
+                width: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include borders;
+                .subtext_text{
+                    margin-top: 46px;
+                    text-align: center;
+                    max-width: 196px;
+                    margin-left: 7px;
+                    @include subtext;
+                    .lacinia{
+                        color: $blue;
+                    }
+                }
+                .button_order{
+                    @include button_order;
+                    .order{
+                        margin-left: 41px;
+                    }
+                    margin-top: 39px;
+                    margin-left: 6px;
+                }
+            }
+        }
+        .third_price{
+            margin-left: 1px;
+            padding-left: 7px;
+            .plan{
+                width: 270px;
+                height: 69px;
+                border: 1px solid #e0e0e0;
+                .plan_text{
+                    @include plan_text;
+                    margin-top: 21px;
+                    margin-left: 0px;
+                }
+            }
+            .pricing_block{
+                height: 150px;
+                width: 270px;
+                @include borders;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .price_number{
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+
+                    .dolar{
+                        @include dolar;
+                        margin-top: 37px;
+                        margin-left: -4px;
+                        height: 40px;
+                    }
+                    .real_price{
+                        @include real_price;
+                        margin-top: 24px;
+                        height: 69px;
+                        margin-left: 1px;
+                    }
+                }
+                .per_month{
+                    @include subtext;
+                    margin-left: 1px;
+                }
+            }
+            .price_subtext{
+                height: 269px;
+                width: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include borders;
+                .subtext_text{
+                    margin-top: 46px;
+                    text-align: center;
+                    max-width: 196px;
+                    margin-left:5px;
+                    @include subtext;
+                    .lacinia{
+                        color: $blue;
+                    }
+                }
+                .button_order{
+                    @include button_order;
+                    .order{
+                        margin-left: 41px;
+                    }
+                    margin-top: 39px;
+                    margin-left: 3px;
+                }
+            }
+        }
+        .fourth_price{
+            margin-left: 0px;
+            padding-left: 7px;
+            .plan{
+                width: 270px;
+                height: 69px;
+                border: 1px solid #e0e0e0;
+                .plan_text{
+                    @include plan_text;
+                    margin-top: 21px;
+                    margin-left: -1px;
+                }
+            }
+            .pricing_block{
+                height: 150px;
+                width: 270px;
+                @include borders;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .price_number{
+                    display: flex;
+                    flex-direction: row;
+
+                    .dolar{
+                        @include dolar;
+                        margin-top: 37px;
+                        margin-left: -4px;
+                        height: 40px;
+                    }
+                    .real_price{
+                        @include real_price;
+                        margin-top: 24px;
+                        height: 69px;
+                        margin-left: 1px;
+                    }
+                }
+                .per_month{
+                    @include subtext;
+                    margin-left: 0px;
+                }
+            }
+            .price_subtext{
+                height: 269px;
+                width: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include borders;
+                .subtext_text{
+                    margin-top: 46px;
+                    text-align: center;
+                    max-width: 196px;
+                    margin-left:4px;
+                    @include subtext;
+                    .lacinia{
+                        color: $blue;
+                    }
+                }
+                .button_order{
+                    @include button_order;
+                    .order{
+                        margin-left: 42px;
+                    }
+                    margin-top: 39px;
+                    margin-left: 4px;
+                }
+            }
+        }
+        .for_hover:hover{
+            transition: all 0.5s ease 0s;
+            .plan{
+                .plan_text{
+                    color: $blue;
+                    transition: all 0.5s ease 0s;
+                }
+            }
+            .pricing_block{
+                background-color: $blue;
+                .price_number{
+                    .dolar{
+                        color: white;
+                        transition: all 0.5s ease 0s;
+                    }
+                    .real_price{
+                        color: white;
+                        transition: all 0.5s ease 0s;
+                    }
+                }
+                .per_month{
+                    color: white;
+                    transition: all 0.5s ease 0s;
+                }
+            }
+            .price_subtext{
+                .button_order{
+                    background-color: $blue;
+                    transition: all 0.5s ease 0s;
+                    .order{
+                        a{
+                            color: white;
+                            transition: all 0.5s ease 0s;
+                            &:hover{
+                                border-bottom: 1px solid #fff !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1199px){
+    .seventh_block{
+        .blue_title{
+            padding-left: 0;
+            text-align: center;
+            padding-top: 40px;
+        }
+        .black_title{
+            padding: 0;
+            text-align:center;
+        }
+        .pricing{
+            box-sizing: border-box;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 3em;
+            .first_price{
+                padding: 0;
+                margin: 0 auto;
+            }
+            .second_price{
+                padding: 0;
+                margin: 0 auto;
+            }
+            .third_price{
+                padding: 0;
+                margin: 0 auto;
+            }
+            .fourth_price{
+                padding: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media(max-width:599px){
+    .seventh_block{
+        .pricing{
+            box-sizing: border-box;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 1em;
+        }
+    }
+}

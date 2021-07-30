@@ -1,0 +1,174 @@
+@mixin button_download{
+    .button_download{
+        width: 160px;
+        height: 50px;
+        background-color: $blue;
+        border-radius: 3px;
+        box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+        display: flex;
+        justify-content: center;
+        font-family: "Sans Bold";
+        font-size: 14px;
+        text-transform: uppercase;
+        .download_text{
+            margin-top: 16px;
+            a{
+                text-decoration: none;
+                color: #fff;
+                &:hover{
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+@mixin button_features{
+    .button_features{
+        width: 158px;
+        height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        font-family: "Sans Bold";
+        font-size: 14px;
+        text-transform: uppercase;
+        .features_text{
+            margin-top: 14.8px;
+            margin-left: 30px;
+            a{
+                text-decoration: none;
+                color: #fff;
+                &:hover{
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            .features{
+                margin-left: 0.5px;
+            }
+        }
+    }
+}
+@mixin subtext{
+    font-family: "Sans Regular";
+    color: $subtext_grey;
+    line-height: 26px;
+    font-size: 18px;
+}
+@mixin blue_title{
+    .blue_title{
+        color:  $blue;
+        font-family: "Sans Bold";
+        font-size: 14px;
+        letter-spacing: 1.42px;
+        text-transform: uppercase;
+    }
+}
+@mixin black_title{
+    .black_title{
+        color: #1a1a1a;
+        font-family: "Sans Semibold";
+        font-size: 36px;
+    }
+}
+@mixin s_b_l{
+    .list_block_photo{
+        width: 88px;
+        height: 88px;
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+        }
+        .list_block_title{
+            margin-top: 33px;
+            font-family: 'Sans Regular';
+            color: #1a1a1a;
+            font-size: 24px;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 20px;
+        }
+        .list_block_text{
+            margin-top: 15.5px;
+            max-width: 235px;
+            text-align: center;
+            @include subtext;
+        }
+}
+@mixin advantages_text{
+    font-family: "Sans Regular";
+    color: #1b1b1b;
+    font-size: 18px;
+}
+@mixin advantages{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    @include advantages_text;
+}
+@mixin blue_line{
+    background: linear-gradient(to right, $blue  48%, transparent 48%, transparent 53%,  $blue 52%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+@mixin slide_subtext{
+    max-width: 550px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Sans Italic';
+}
+@mixin name{
+    font-size: 16px;
+    font-family: 'Sans Regular';
+    color: #fff;
+}
+@mixin post{
+    font-family: 'Sans Bold';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+@mixin plan_text{
+    font-size: 24px;
+    font-family: 'Sans Bold';
+    text-align: center;
+    text-transform: uppercase;
+}
+@mixin borders{
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+@mixin dolar{
+    font-size: 27px;
+    font-family: 'Sans Semibold';
+    color:#1a1a1a;
+}
+@mixin real_price{
+    font-size: 60px;
+    font-family: 'Sans Semibold';
+    color:#1a1a1a;
+}
+@mixin button_order{
+    width: 160px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    font-family: "Sans Bold";
+    font-size: 14px;
+    text-transform: uppercase;
+        .order{
+            margin-top: 16px;
+            margin-left: 40.5px;
+            a{
+                text-decoration: none;
+                color: $blue;
+                &:hover{
+                    border-bottom: 1px solid #000;
+                }
+            }
+    }
+}
+@mixin form_text{
+    font-size: 14px;
+    font-family: 'Sans Bold';
+    text-transform: uppercase;
+}

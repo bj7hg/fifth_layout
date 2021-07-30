@@ -1,0 +1,197 @@
+@import "mixins.scss";
+@import "variables.scss";
+.fifth_block{
+    background-image: url("../img/slider_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 100%;
+    .fifth_block_content{
+        max-width: 1170px;
+        margin: 0 auto;
+        @include blue_title;
+        .blue_title{
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 60px 0 0 12px;
+        }
+        @include black_title;
+        .black_title{
+            padding-left: 142px ;
+            margin: 7px auto 0;
+            color:white;
+        }
+        .blue_line{
+            margin: 25px auto 0;
+            @include blue_line;
+            width: 42px;
+            height: 2px;
+        }
+        .slider{
+            position: relative;
+            .slick-list{
+                overflow: hidden;
+            }
+            .slick-track{
+                display: flex;
+            }
+            .slick-dots{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                padding: 0;
+                margin-left: -1px;
+                margin-top: 133px;
+                li{
+                    list-style: none;
+                    button{
+                        font-size: 0;
+                        padding: 2px;
+                        border: 1.5px solid rgba(255, 255, 255, 0.2);
+                        background-color: transparent;
+                        border-radius: 50%;
+                        margin: 0 12px;
+                    }
+                }
+                li.slick-active{
+                    list-style: none;
+                    button{
+                        font-size: 0;
+                        width: 14px;
+                        height: 14px;
+                        background-color:white ;
+                        border: none;
+                        border-radius: 50%;
+                        margin: 7px 7px;
+                    }
+                }
+                
+            }
+            .slide_first{
+                margin-top: 87.5px;
+                margin-left: -1px;
+                .slide_subtext{
+                    @include slide_subtext;
+                }
+                .slider_bottom{
+                    margin-top: 23px;
+                    margin-left: 1px;
+                    display: flex;
+                    flex-direction: row;
+                    .name_slide{
+                        margin-left: 24px;
+                        margin-top: 6px;
+                        .name{
+                            @include name;
+                        }
+                        .post{
+                            @include post;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+            .slide_second{
+                margin-top: 87.5px;
+                margin-left: 29px;
+                .slide_subtext{
+                    @include slide_subtext;
+                }
+                .slider_bottom{
+                    margin-top: 23px;
+                    margin-left: 1px;
+                    display: flex;
+                    flex-direction: row;
+                    .name_slide{
+                        margin-left: 24px;
+                        margin-top: 6px;
+                        .name{
+                            @include name;
+                            margin-left: 0.5px;
+                        }
+                        .post{
+                            @include post;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1419px){
+    .fifth_block{
+        .fifth_block_content{
+            .slider{
+                .slide_first{
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px){
+    .fifth_block{
+        .fifth_block_content{
+            .blue_title{
+                padding-left: 0;
+                text-align: center;
+                padding-top: 40px;
+            }
+            .black_title{
+                padding: 0;
+                text-align:center;
+            }
+        }
+    }
+}
+@media (max-width: 1110px){
+    .fifth_block{
+        .fifth_block_content{
+            .slider{
+                box-sizing: 15px;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+@media(max-width:876px){
+    .fifth_block{
+        .fifth_block_content{
+            .slider{
+                .slick-dots{
+                    margin-top: 30px;
+                }
+                .slide_main{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 876px;
+                    .slide_subtext{
+                        text-align: center;
+                    }
+                    .slider_bottom{
+                        flex-direction: column;
+                        img{
+                            height: 59px;
+                            width: 59px;
+                            margin: 0 auto;
+                        }
+                        .name_slide{
+                            text-align: center;
+                            margin-left:0 ;
+                        }
+                    }
+                }
+                .slide_first{
+                    padding: 0 10px;
+                }
+                .slide_second{
+                    margin-left: 0;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}

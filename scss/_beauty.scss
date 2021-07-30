@@ -1,0 +1,182 @@
+@import "mixins.scss";
+@import "variables.scss";
+.third_block{
+    z-index: 100;
+    max-width: 1170px;
+    min-height: 705px;
+    margin: 0 auto;
+    .third_block_left{
+        .third_block_mobile{
+            margin-top: 66.2px;
+            margin-left: 53px;
+        }
+    }
+    .third_block_right{
+        @include blue_title;
+        .blue_title{
+            margin-top: 115.5px;
+            margin-left: 3px
+        }
+        @include black_title;
+        .black_title{
+            margin-top: 7px;
+            margin-left: 3px
+        }
+        .blue_line{
+            margin-left: 3px;
+            margin-top: 22.1px;
+            height: 2px;
+            width: 42px;
+            @include blue_line;
+        }
+        .third_right_subtext{
+            position: relative;
+            margin-left: 3px;
+            margin-top: 27px;
+            max-width: 470px;
+            @include subtext;
+            .mauris{
+                margin-left: 5px;
+            }
+        }
+        .third_first_advantages{
+            margin-top: 31px;
+            margin-left: 3px;
+            @include advantages;
+            img{
+                width: 16px;
+                height: 16px;
+                margin-top: 2px;
+            }
+            .third_text_advantages{
+                margin-top: -1px;
+                margin-left: 9.5px;
+            }
+        }
+        .third_second_advantages{
+            margin-top: 13px;
+            margin-left: 6px; 
+            @include advantages;
+            img{
+                width: 10px;
+                height: 17px;
+                margin-top: 2px;
+            }
+            .third_text_advantages{
+                margin-top: 0px;
+                margin-left: 12.5px;
+            }
+        }
+        .third_third_advantages{
+            margin-top: 13px;
+            margin-left: 5.5px; 
+            @include advantages;
+            img{
+                width: 11px;
+                height: 17px;
+                margin-top: 2.5px;
+            }
+            .third_text_advantages{
+                margin-top: -0.5px;
+                margin-left: 12px;
+            }
+        }
+        .third_fourth_advantages{
+            margin-top: 14px;
+            margin-left: 3px; 
+            @include advantages;
+            img{
+                width: 16px;
+                height: 16px;
+                margin-top: 2px;
+            }
+            .third_text_advantages{
+                margin-top: -0.5px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:1199px){
+    .third_block{
+        box-sizing: border-box;
+        padding: 0 15px;
+        .third_block_left{
+            display: flex;
+            justify-content: center;
+            .third_block_mobile{
+                margin-top: 150px;
+                margin-left: 10px;
+                img{
+                    height: 470px;
+                }
+
+            }
+        }
+        .third_block_right{
+            margin-top: -620px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .blue_title{
+                margin-top: 20px;
+            }
+            .blue_line{
+                margin-bottom: 500px;
+            }
+            .third_right_subtext{
+                text-align: center;
+            }
+            .third_fourth_advantages{
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+@media (max-width:650px){
+    .third_block{
+        .third_block_left{
+            .third_block_mobile{
+                img{
+                    height: 400px;
+                }
+            }
+        }
+        .third_block_right{
+            margin-top: -530px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .blue_line{
+                margin-bottom: 430px;
+            }
+            .black_title{
+                font-size: 24px;
+            }
+        }
+    }
+}
+@media (max-width:440px){
+    .third_block{
+        .third_block_left{
+            .third_block_mobile{
+                img{
+                    height: 300px;
+                }
+            }
+        }
+        .third_block_right{
+            margin-top: -450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .blue_line{
+                margin-bottom: 340px;
+            }
+            .black_title{
+                font-size: 24px;
+            }
+        }
+    }
+}
